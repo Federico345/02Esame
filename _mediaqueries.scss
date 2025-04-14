@@ -1,0 +1,130 @@
+@media  all and (max-width: 728px) {
+  body {
+    padding: 0; 
+  }
+
+  section {
+    padding: 10px; 
+  }
+    .nav ul {
+      flex-direction: column;
+    }
+    
+    .nav ul li {
+      margin: 10px 0;
+    }
+  
+    #testo h1 {
+      font-size: 2em;
+    }
+  
+    #testostoria {
+      font-size: 1em;
+      margin: 10px;
+    }
+  
+    .cosa {
+      max-width: 90%;
+    }
+  
+    #foto1 {
+      max-width: 90%;
+    }
+  
+    #sezione {
+      max-width: 90%;
+    }
+    
+    .cosa h2 {
+      font-size: 1.5em;
+    }
+
+    .sezione1, .sezione2 {
+      padding: 10px;
+      margin: 0 auto;
+      max-width: 100%;
+      overflow-x: hidden;
+      width: 90%;
+      padding: 15px;
+    }
+    .sezione1 img {
+      max-width: 100%; // Adatta l'immagine al contenitore
+      height: auto; // Mantieni le proporzioni
+      display: block; // Evita spazi extra causati da immagini inline
+      margin: 0 auto; // Centra l'immagine
+    }
+  
+    .sezione2 textarea {
+      width: 100%; // Adatta il textarea al contenitore
+      max-width: 100%; // Evita che superi il contenitore
+      box-sizing: border-box; // Include padding e bordi nella larghezza totale
+    }
+  
+    .sezione2 .commenti {
+      max-width: 100%; // Assicura che il contenitore non superi il viewport
+      margin: o auto;
+    }
+  }
+  
+  @media all and (max-width: 425px) {
+    .nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .nav ul li {
+      margin: 8px 0;
+    }
+  
+    #testo h1 {
+      font-size: 1.8em;
+    }
+  
+    #testostoria {
+      font-size: 0.9em;
+      margin: 10px;
+    }
+  
+    .cosa {
+      max-width: 95%;
+      padding: 10px;
+    }
+  
+    .cosa h2 {
+      font-size: 1.4em;
+    }
+  
+    #foto1 {
+      max-width: 95%;
+    }
+  
+    #sezione {
+      max-width: 95%;
+    }
+    
+    button {
+      padding: 8px 16px;
+    }
+
+    .sezione1, .sezione2 {
+      padding: 10px; // Riduci il padding per schermi piccoli
+    }
+  
+    .sezione1 img {
+      max-width: 100%; // Assicura che l'immagine si adatti al contenitore
+    }
+  
+    .sezione2 textarea {
+      width: 100%; // Adatta il textarea al contenitore
+      max-width: 100%; // Evita che superi il contenitore
+    }
+
+    h1{
+      margin-top: 60px; 
+    text-align: center; 
+    font-size: 2rem; 
+    color: $color-light;
+    }
+  }
+  
+

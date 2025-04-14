@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-family;
+  line-height: 1.6;
+  color: $color-dark;
+  background-color: $color-background;
+  background-image: url(./img/universo.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+main {
+  max-width: 100%; // Assicura che il contenuto non superi il viewport
+  margin: 0 auto; // Centra il contenitore principale
+  padding: 0 20px; // Aggiungi padding laterale per evitare che il contenuto tocchi i bordi
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+  @include border-radius(8px);
+}
+
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+section {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.contatti-container {
+  background-color: #f9f9f9; // Colore di sfondo chiaro
+  border: 2px solid #ccc; // Bordo sottile
+  border-radius: 8px; // Angoli arrotondati
+  padding: 20px; // Spaziatura interna
+  margin: 20px auto; // Margine esterno e centratura
+  width: 90%; // Larghezza relativa al viewport
+  max-width: 800px; // Larghezza massima
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); // Leggera ombra per profondità
+  box-sizing: border-box; // Include padding e bordi nella larghezza totale
+  text-align: center; // Centra il testo
+
+  p,
+  a,
+  address {
+    margin: 10px 0; // Spaziatura tra gli elementi
+    font-size: 1rem; // Dimensione del testo
+    color: #333; // Colore del testo
+  }
+
+  a {
+    color: #007bff; // Colore dei link
+    text-decoration: none; // Rimuove la sottolineatura
+  }
+
+  a:hover {
+    text-decoration: underline; // Sottolinea i link al passaggio del mouse
+  }
+
+  img {
+    max-width: 100%; // Adatta l'immagine al contenitore
+    height: auto; // Mantieni le proporzioni
+    margin-top: 20px; // Spaziatura sopra l'immagine
+    border-radius: 8px; // Angoli arrotondati per l'immagine
+  }
+}
+
+h1 {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 2rem;
+  color: $color-light;
+}
+
+.sezione1 button {
+  background-color: #007bff; // Colore di sfondo principale
+  color: #fff; // Colore del testo
+  border: none; // Rimuovi il bordo
+  border-radius: 5px; // Angoli arrotondati
+  padding: 10px 20px; // Spaziatura interna
+  font-size: 1rem; // Dimensione del testo
+  font-weight: bold; // Testo in grassetto
+  cursor: pointer; // Cambia il cursore al passaggio del mouse
+  transition: background-color 0.3s ease, transform 0.2s ease; // Transizioni fluide
+}
+
+.sezione1 button:hover {
+  background-color: #0056b3; // Colore di sfondo al passaggio del mouse
+  transform: scale(1.05); // Leggero ingrandimento al passaggio del mouse
+}
+
+.sezione1 button:active {
+  background-color: #003f7f; // Colore di sfondo quando il pulsante è attivo
+  transform: scale(0.95); // Leggero rimpicciolimento quando cliccato
+}
+
+.errore {
+  color: red;
+  font-size: 0.9em;
+}
+
+.input-errore {
+  border: 2px solid red;
+  background-color: #ffe6e6;
+}

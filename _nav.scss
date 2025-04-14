@@ -1,0 +1,166 @@
+nav.nav{
+  position: fixed;
+  background-color: $color-primary;
+  color: $color-light;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-wrap: nowrap;
+  z-index: 1000;
+  top: 0;
+
+}
+
+nav.nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+}
+
+nav.nav li{
+  list-style: none;
+  display: inline;
+  margin: 0 15px;
+}
+
+nav.nav a {
+  color: $color-light;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 20px;
+  @include transition(background-color, 0.3s);
+}
+
+nav.nav a:hover {
+  background-color: $color-hover;
+}
+  
+  nav.nav #controllo {
+    opacity: 0;
+  }
+
+  @media all and (max-width: 768px){
+    nav.nav .label-controllo {
+      position: fixed;
+      top: 18px;
+      left: 20px;
+      width: 26px;
+      height: 26px;
+      cursor: pointer;
+      z-index: 1;
+      display: flex;
+      align-items: center; // Centra verticalmente il contenuto
+      justify-content: center; // Centra orizzontalmente il contenuto
+    }
+    
+    nav.nav .label-controllo > span,
+    nav.nav .label-controllo > span::before,
+    nav.nav .label-controllo > span::after {
+      position: absolute;
+      width: 20px;
+      height: 2px;
+      background-color: #fff;
+      transition: transform 0.25s, top 0.25s; // Aggiunto per animazioni fluide
+    }
+    
+    nav.nav .label-controllo > span {
+      top: 0px;
+      
+    }
+    
+    nav.nav .label-controllo > span::before {
+      content: '';
+      position: absolute;
+      top: -8px; // Posiziona la linea superiore rispetto alla linea centrale
+      left: 0;
+      width: 20px;
+      height: 2px;
+      background-color: #fff;
+    }
+    
+    nav.nav .label-controllo > span::after {
+      content: '';
+      position: absolute;
+      top: 8px; // Posiziona la linea inferiore rispetto alla linea centrale
+      left: 0;
+      width: 20px;
+      height: 2px;
+      background-color: #fff;
+    }
+
+    nav.nav #menu{
+      display: block;
+      position: fixed;
+      top: 0 ;
+      left: -100%;
+      width: 90%;
+      height: 100%;
+      padding: 80px 0;
+      background-color: $color-primary;
+      box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+      transition-duration: .25s;
+    }
+
+    nav.nav .vociMenu{
+      display: block;
+      padding: 12px 24px;
+      color: #fff;
+      font-size: 1.5rem;
+      font-weight: 600;
+      transition-duration: .25s;
+    }
+
+    nav.nav .vociMenu:hover{
+      background-color: #fff;
+      color: $color-dark;
+    }
+
+    #controllo:checked+.label-controllo>span{
+      transform: rotate(45deg);
+
+    }
+
+    #controllo:checked+.label-controllo>span::before{
+      transform: rotate(0deg);
+      top: 0;
+    }
+
+    #controllo:checked+.label-controllo>span::after{
+      transform: rotate(90deg);
+      top: 0;
+    }
+    #controllo:checked~#menu{
+      left: 0 !important;
+    }
+  }
+
+
+
+  //.nav {
+    //background-color: $color-primary;
+    //padding-bottom: 30px;
+  
+    //ul {
+   //   list-style: none;
+   //   display: flex;
+   //   justify-content: center;
+//padding: 0;
+ //   }
+  //
+   // ul li {
+ //     margin: 0 15px;
+ //   }
+  
+ //   ul li a {
+  //    color: $color-light;
+  //    text-decoration: none;
+  //    font-weight: bold;
+   //   padding: 10px 20px;
+      //@include transition(background-color, 0.3s);
+      
+//      &:hover {
+        //background-color: $color-hover;
+    //  }
+ //   }
+//  }

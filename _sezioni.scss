@@ -1,0 +1,111 @@
+
+.sezione1, .sezione2 {
+    margin: 20px auto; // Centra le sezioni orizzontalmente
+    width: 80%; // Larghezza relativa al viewport
+    max-width: 900px; // Limita la larghezza massima
+    padding: 20px; // Spaziatura interna
+    background-color: #f0f0f0; // Colore di sfondo
+    border: 2px solid #ccc; // Bordo sottile
+    border-radius: 8px; // Angoli arrotondati
+    box-sizing: border-box; // Include padding e bordi nella larghezza totale
+    position: relative; // Mantieni il posizionamento relativo
+  }
+
+#titolocontatti {
+    color: #333; 
+    text-align: center; 
+}
+
+#numeromail {
+    font-size: 1.1rem; 
+    color: #444; 
+    margin-top: 20px;
+}
+
+a {
+    color: #007bff; 
+    text-decoration: none; 
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+address {
+    font-style: normal; 
+    margin-top: 10px;
+    color: #333; 
+}
+
+img {
+    max-width: 100%; 
+    height: auto;
+    margin-top: 20px; 
+    border-radius: 8px; 
+}
+
+textarea{
+    max-width: 100%;
+    box-sizing: border-box ;
+}
+
+
+
+.sezione2 .commenti,
+.sezione2 .descrizionebreve{
+    max-width: 100%;
+    margin: 0 auto;
+
+}
+
+.sezione2 textarea{
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+
+#contenitore {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center; 
+    gap: 20px; 
+}
+
+#foto1 {
+    order: 2; 
+    width: 50%; 
+    max-width: 100%;
+    height: auto;
+}
+
+.cosa {
+    order: 1; 
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px;
+    max-width: 800px;
+    border-radius: 8px;
+}
+
+.sezione2 button {
+    background-color: #007bff; // Colore di sfondo principale
+    color: #fff; // Colore del testo
+    border: none; // Rimuovi il bordo
+    border-radius: 5px; // Angoli arrotondati
+    padding: 10px 20px; // Spaziatura interna
+    font-size: 1rem; // Dimensione del testo
+    font-weight: bold; // Testo in grassetto
+    cursor: pointer; // Cambia il cursore al passaggio del mouse
+    transition: background-color 0.3s ease, transform 0.2s ease; // Transizioni fluide
+  }
+  
+  .sezione2 button:hover {
+    background-color: #0056b3; // Colore di sfondo al passaggio del mouse
+    transform: scale(1.05); // Leggero ingrandimento al passaggio del mouse
+  }
+  
+  .sezione2 button:active {
+    background-color: #003f7f; // Colore di sfondo quando il pulsante è attivo
+    transform: scale(0.95); // Leggero rimpicciolimento quando cliccato
+  }

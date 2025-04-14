@@ -1,0 +1,15 @@
+@mixin transition($property, $duration) {
+    transition: $property $duration;
+  }
+  
+  @mixin border-radius($radius) {
+    border-radius: $radius;
+  }
+  
+  
+  @mixin center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  

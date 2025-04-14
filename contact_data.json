@@ -1,0 +1,30 @@
+{
+    "persone": [
+        {
+            "nome": "Fabio",
+            "cognome": "Pino",
+            "eta": 50
+        },
+        {
+            "nome": "Luigi",
+            "cognome": "Bianchi",
+            "eta": 40
+        },
+        {
+            "nome": "Maestro",
+            "cognome": "Muten",
+            "eta": 30
+        },
+        {
+            "nome": "Totò",
+            "cognome": "Riina",
+            "eta": 20
+        },
+        {
+            "nome": "Binno",
+            "cognome": "Rovenzano",
+            "eta": 10
+        }
+    ]
+}
+        

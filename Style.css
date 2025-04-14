@@ -1,0 +1,594 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+  background-image: url(./img/universo.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+main {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+section {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.contatti-container {
+  background-color: #f9f9f9;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 800px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  text-align: center;
+}
+.contatti-container p,
+.contatti-container a,
+.contatti-container address {
+  margin: 10px 0;
+  font-size: 1rem;
+  color: #333;
+}
+.contatti-container a {
+  color: #007bff;
+  text-decoration: none;
+}
+.contatti-container a:hover {
+  text-decoration: underline;
+}
+.contatti-container img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+h1 {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.sezione1 button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.sezione1 button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.sezione1 button:active {
+  background-color: #003f7f;
+  transform: scale(0.95);
+}
+
+.errore {
+  color: red;
+  font-size: 0.9em;
+}
+
+.input-errore {
+  border: 2px solid red;
+  background-color: #ffe6e6;
+}
+
+#header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer {
+  background-color: rgb(37, 114, 255);
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+.footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+.footer ul li {
+  margin: 0 15px;
+}
+.footer ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+.footer ul li a:hover {
+  text-decoration: underline;
+}
+
+nav.nav {
+  position: fixed;
+  background-color: rgb(37, 114, 255);
+  color: #fff;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-wrap: nowrap;
+  z-index: 1000;
+  top: 0;
+}
+
+nav.nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+}
+
+nav.nav li {
+  list-style: none;
+  display: inline;
+  margin: 0 15px;
+}
+
+nav.nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 20px;
+  transition: background-color 0.3s;
+}
+
+nav.nav a:hover {
+  background-color: #444;
+}
+
+nav.nav #controllo {
+  opacity: 0;
+}
+
+@media all and (max-width: 768px) {
+  nav.nav .label-controllo {
+    position: fixed;
+    top: 18px;
+    left: 20px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  nav.nav .label-controllo > span,
+  nav.nav .label-controllo > span::before,
+  nav.nav .label-controllo > span::after {
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: #fff;
+    transition: transform 0.25s, top 0.25s;
+  }
+  nav.nav .label-controllo > span {
+    top: 0px;
+  }
+  nav.nav .label-controllo > span::before {
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: 0;
+    width: 20px;
+    height: 2px;
+    background-color: #fff;
+  }
+  nav.nav .label-controllo > span::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 0;
+    width: 20px;
+    height: 2px;
+    background-color: #fff;
+  }
+  nav.nav #menu {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 90%;
+    height: 100%;
+    padding: 80px 0;
+    background-color: rgb(37, 114, 255);
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+    transition-duration: 0.25s;
+  }
+  nav.nav .vociMenu {
+    display: block;
+    padding: 12px 24px;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    transition-duration: 0.25s;
+  }
+  nav.nav .vociMenu:hover {
+    background-color: #fff;
+    color: #333;
+  }
+  #controllo:checked + .label-controllo > span {
+    transform: rotate(45deg);
+  }
+  #controllo:checked + .label-controllo > span::before {
+    transform: rotate(0deg);
+    top: 0;
+  }
+  #controllo:checked + .label-controllo > span::after {
+    transform: rotate(90deg);
+    top: 0;
+  }
+  #controllo:checked ~ #menu {
+    left: 0 !important;
+  }
+}
+form {
+  margin: 20px 0;
+}
+
+fieldset {
+  border: 2px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #fafafa;
+}
+
+input[type=button] {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+input[type=button]:hover {
+  background-color: #0056b3;
+}
+
+input[type=text], input[type=email], textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+@media all and (max-width: 728px) {
+  body {
+    padding: 0;
+  }
+  section {
+    padding: 10px;
+  }
+  .nav ul {
+    flex-direction: column;
+  }
+  .nav ul li {
+    margin: 10px 0;
+  }
+  #testo h1 {
+    font-size: 2em;
+  }
+  #testostoria {
+    font-size: 1em;
+    margin: 10px;
+  }
+  .cosa {
+    max-width: 90%;
+  }
+  #foto1 {
+    max-width: 90%;
+  }
+  #sezione {
+    max-width: 90%;
+  }
+  .cosa h2 {
+    font-size: 1.5em;
+  }
+  .sezione1, .sezione2 {
+    padding: 10px;
+    margin: 0 auto;
+    max-width: 100%;
+    overflow-x: hidden;
+    width: 90%;
+    padding: 15px;
+  }
+  .sezione1 img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  .sezione2 textarea {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  .sezione2 .commenti {
+    max-width: 100%;
+    margin: o auto;
+  }
+}
+@media all and (max-width: 425px) {
+  .nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav ul li {
+    margin: 8px 0;
+  }
+  #testo h1 {
+    font-size: 1.8em;
+  }
+  #testostoria {
+    font-size: 0.9em;
+    margin: 10px;
+  }
+  .cosa {
+    max-width: 95%;
+    padding: 10px;
+  }
+  .cosa h2 {
+    font-size: 1.4em;
+  }
+  #foto1 {
+    max-width: 95%;
+  }
+  #sezione {
+    max-width: 95%;
+  }
+  button {
+    padding: 8px 16px;
+  }
+  .sezione1, .sezione2 {
+    padding: 10px;
+  }
+  .sezione1 img {
+    max-width: 100%;
+  }
+  .sezione2 textarea {
+    width: 100%;
+    max-width: 100%;
+  }
+  h1 {
+    margin-top: 60px;
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+  }
+}
+.paginaprogetti {
+  color: #f4f4f4;
+  position: relative;
+}
+
+.paginaprogetti h3 {
+  color: white;
+  background-color: rgba(0, 123, 255, 0);
+  padding: 10px;
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 0;
+  position: absolute;
+  top: 19px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: auto;
+}
+
+.PROGETTI {
+  color: #f4f4f4;
+}
+
+.PROGETTI h1 {
+  color: #f4f4f4;
+}
+
+.paginaprogetti {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+}
+
+.paginaprogetti .progetto1 {
+  flex: 1 1 45%;
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.paginaprogetti .progetto2 {
+  flex: 1 1 45%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.paginaprogetti .progetto3,
+.paginaprogetti .progetto4 {
+  flex: 1 1 45%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.paginaprogetti .progetto1,
+.paginaprogetti .progetto2,
+.paginaprogetti .progetto3,
+.paginaprogetti .progetto4 {
+  position: relative;
+  width: 48%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.progetto1 form {
+  margin-top: 15px;
+}
+
+.sezione1, .sezione2 {
+  margin: 20px auto;
+  width: 80%;
+  max-width: 900px;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+#titolocontatti {
+  color: #333;
+  text-align: center;
+}
+
+#numeromail {
+  font-size: 1.1rem;
+  color: #444;
+  margin-top: 20px;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+address {
+  font-style: normal;
+  margin-top: 10px;
+  color: #333;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+textarea {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.sezione2 .commenti,
+.sezione2 .descrizionebreve {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.sezione2 textarea {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+#contenitore {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+
+#foto1 {
+  order: 2;
+  width: 50%;
+  max-width: 100%;
+  height: auto;
+}
+
+.cosa {
+  order: 1;
+  padding: 20px;
+  background-color: #fff;
+  margin: 20px;
+  max-width: 800px;
+  border-radius: 8px;
+}
+
+.sezione2 button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.sezione2 button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.sezione2 button:active {
+  background-color: #003f7f;
+  transform: scale(0.95);
+}/*# sourceMappingURL=Style.css.map */
