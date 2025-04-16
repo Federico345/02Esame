@@ -1,5 +1,4 @@
 <?php
-// Carica i dati dal file JSON
 $portfolio = json_decode(file_get_contents('portfolio.json'), true);
 ?>
 

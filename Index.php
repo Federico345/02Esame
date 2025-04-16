@@ -1,16 +1,15 @@
 <?php
-// Inizializzazione delle variabili
 $errors = [];
 $nome = $cognome = $email = $commento = "";
 
-// Gestione del form
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nome = htmlspecialchars(trim($_POST["nome"]));
     $cognome = htmlspecialchars(trim($_POST["cognome"]));
     $email = htmlspecialchars(trim($_POST["email"]));
     $commento = htmlspecialchars(trim($_POST["commento"]));
 
-    // Validazione dei campi
+    
     if (empty($nome)) {
         $errors['nome'] = 'Il nome è obbligatorio.';
     }
@@ -27,7 +26,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $errors['commento'] = 'Il commento è obbligatorio.';
     }
 
-    // Se non ci sono errori, salva i dati
 
     if (empty($errors)) {
         $riga = "Nome: $nome | Cognome: $cognome | Email: $email | Commento: $commento" . PHP_EOL;

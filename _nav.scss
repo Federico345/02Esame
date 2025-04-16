@@ -50,8 +50,8 @@ nav.nav a:hover {
       cursor: pointer;
       z-index: 1;
       display: flex;
-      align-items: center; // Centra verticalmente il contenuto
-      justify-content: center; // Centra orizzontalmente il contenuto
+      align-items: center; 
+      justify-content: center; 
     }
     
     nav.nav .label-controllo > span,
@@ -61,7 +61,7 @@ nav.nav a:hover {
       width: 20px;
       height: 2px;
       background-color: #fff;
-      transition: transform 0.25s, top 0.25s; // Aggiunto per animazioni fluide
+      transition: transform 0.25s, top 0.25s; 
     }
     
     nav.nav .label-controllo > span {
@@ -72,7 +72,7 @@ nav.nav a:hover {
     nav.nav .label-controllo > span::before {
       content: '';
       position: absolute;
-      top: -8px; // Posiziona la linea superiore rispetto alla linea centrale
+      top: -8px; 
       left: 0;
       width: 20px;
       height: 2px;
@@ -82,7 +82,7 @@ nav.nav a:hover {
     nav.nav .label-controllo > span::after {
       content: '';
       position: absolute;
-      top: 8px; // Posiziona la linea inferiore rispetto alla linea centrale
+      top: 8px; 
       left: 0;
       width: 20px;
       height: 2px;

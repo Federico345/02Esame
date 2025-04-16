@@ -48,20 +48,20 @@
       padding: 15px;
     }
     .sezione1 img {
-      max-width: 100%; // Adatta l'immagine al contenitore
-      height: auto; // Mantieni le proporzioni
-      display: block; // Evita spazi extra causati da immagini inline
-      margin: 0 auto; // Centra l'immagine
+      max-width: 100%; 
+      height: auto; 
+      display: block;
+      margin: 0 auto; 
     }
   
     .sezione2 textarea {
-      width: 100%; // Adatta il textarea al contenitore
-      max-width: 100%; // Evita che superi il contenitore
-      box-sizing: border-box; // Include padding e bordi nella larghezza totale
+      width: 100%; 
+      max-width: 100%; 
+      box-sizing: border-box;
     }
   
     .sezione2 .commenti {
-      max-width: 100%; // Assicura che il contenitore non superi il viewport
+      max-width: 100%; 
       margin: o auto;
     }
   }
@@ -107,16 +107,16 @@
     }
 
     .sezione1, .sezione2 {
-      padding: 10px; // Riduci il padding per schermi piccoli
+      padding: 10px; 
     }
   
     .sezione1 img {
-      max-width: 100%; // Assicura che l'immagine si adatti al contenitore
+      max-width: 100%; 
     }
   
     .sezione2 textarea {
-      width: 100%; // Adatta il textarea al contenitore
-      max-width: 100%; // Evita che superi il contenitore
+      width: 100%; 
+      max-width: 100%; 
     }
 
     h1{

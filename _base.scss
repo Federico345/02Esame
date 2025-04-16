@@ -16,9 +16,9 @@ body {
 }
 
 main {
-  max-width: 100%; // Assicura che il contenuto non superi il viewport
-  margin: 0 auto; // Centra il contenitore principale
-  padding: 0 20px; // Aggiungi padding laterale per evitare che il contenuto tocchi i bordi
+  max-width: 100%; 
+  margin: 0 auto; 
+  padding: 0 20px;
 }
 
 img {
@@ -46,39 +46,39 @@ section {
 }
 
 .contatti-container {
-  background-color: #f9f9f9; // Colore di sfondo chiaro
-  border: 2px solid #ccc; // Bordo sottile
-  border-radius: 8px; // Angoli arrotondati
-  padding: 20px; // Spaziatura interna
-  margin: 20px auto; // Margine esterno e centratura
-  width: 90%; // Larghezza relativa al viewport
-  max-width: 800px; // Larghezza massima
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); // Leggera ombra per profondità
-  box-sizing: border-box; // Include padding e bordi nella larghezza totale
-  text-align: center; // Centra il testo
+  background-color: #f9f9f9; 
+  border: 2px solid #ccc; 
+  border-radius: 8px; 
+  padding: 20px; 
+  margin: 20px auto; 
+  width: 90%; 
+  max-width: 800px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box; 
+  text-align: center;
 
   p,
   a,
   address {
-    margin: 10px 0; // Spaziatura tra gli elementi
-    font-size: 1rem; // Dimensione del testo
-    color: #333; // Colore del testo
+    margin: 10px 0; 
+    font-size: 1rem; 
+    color: #333; 
   }
 
   a {
-    color: #007bff; // Colore dei link
-    text-decoration: none; // Rimuove la sottolineatura
+    color: #007bff; 
+    text-decoration: none;
   }
 
   a:hover {
-    text-decoration: underline; // Sottolinea i link al passaggio del mouse
+    text-decoration: underline; 
   }
 
   img {
-    max-width: 100%; // Adatta l'immagine al contenitore
-    height: auto; // Mantieni le proporzioni
-    margin-top: 20px; // Spaziatura sopra l'immagine
-    border-radius: 8px; // Angoli arrotondati per l'immagine
+    max-width: 100%; 
+    height: auto; 
+    margin-top: 20px; 
+    border-radius: 8px; 
   }
 }
 
@@ -90,25 +90,25 @@ h1 {
 }
 
 .sezione1 button {
-  background-color: #007bff; // Colore di sfondo principale
-  color: #fff; // Colore del testo
-  border: none; // Rimuovi il bordo
-  border-radius: 5px; // Angoli arrotondati
-  padding: 10px 20px; // Spaziatura interna
-  font-size: 1rem; // Dimensione del testo
-  font-weight: bold; // Testo in grassetto
-  cursor: pointer; // Cambia il cursore al passaggio del mouse
-  transition: background-color 0.3s ease, transform 0.2s ease; // Transizioni fluide
+  background-color: #007bff; 
+  color: #fff; 
+  border: none; 
+  border-radius: 5px;
+  padding: 10px 20px; 
+  font-size: 1rem; 
+  font-weight: bold; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease, transform 0.2s ease; 
 }
 
 .sezione1 button:hover {
-  background-color: #0056b3; // Colore di sfondo al passaggio del mouse
-  transform: scale(1.05); // Leggero ingrandimento al passaggio del mouse
+  background-color: #0056b3; 
+  transform: scale(1.05); 
 }
 
 .sezione1 button:active {
-  background-color: #003f7f; // Colore di sfondo quando il pulsante è attivo
-  transform: scale(0.95); // Leggero rimpicciolimento quando cliccato
+  background-color: #003f7f; 
+  transform: scale(0.95); 
 }
 
 .errore {
