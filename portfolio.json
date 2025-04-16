@@ -1,0 +1,36 @@
+[
+    {
+        "id": 1,
+        "titolo": "Progetto 1",
+        "immagine": "./img/immaginepag.principale.jpg",
+        "sottotitolo": "Descrizione",
+        "teamwork": {
+            "titolo": "Cosa abbiamo fatto",
+            "contenuto": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque tempore rem sapiente at placeat delectus ipsum nesciunt, aspernatur molestias ducimus aliquam iste enim beatae id repellendus quia, sint perspiciatis assumenda.</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam aspernatur eum perferendis, tempore obcaecati itaque cupiditate asperiores necessitatibus nisi a ad doloribus explicabo laudantium porro quisquam exercitationem adipisci labore similique.</p>",
+            "descrizione": "<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione pariatur sunt, inventore deleniti saepe voluptate adipisci cum recusandae excepturi assumenda hic incidunt. Fugit facilis debitis ipsum veritatis eius quia et.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi atque aliquid repellat adipisci quo nobis, laboriosam quisquam natus ea ratione omnis assumenda distinctio necessitatibus similique officiis dolorem nisi animi at!</p>"
+        }
+    },
+    {
+        "id": 2,
+        "titolo": "Progetto 2",
+        "immagine": "./img/immaginepag.principale.jpg",
+        "sottotitolo": "Descrizione",
+        "teamwork": {
+            "titolo": "Cosa abbiamo fatto",
+            "contenuto": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque tempore rem sapiente at placeat delectus ipsum nesciunt, aspernatur molestias ducimus aliquam iste enim beatae id repellendus quia, sint perspiciatis assumenda.</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam aspernatur eum perferendis, tempore obcaecati itaque cupiditate asperiores necessitatibus nisi a ad doloribus explicabo laudantium porro quisquam exercitationem adipisci labore similique.</p>",
+            "descrizione": "<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione pariatur sunt, inventore deleniti saepe voluptate adipisci cum recusandae excepturi assumenda hic incidunt. Fugit facilis debitis ipsum veritatis eius quia et.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi atque aliquid repellat adipisci quo nobis, laboriosam quisquam natus ea ratione omnis assumenda distinctio necessitatibus similique officiis dolorem nisi animi at!</p>"
+        }
+    },
+    {
+        "id": 3,
+        "titolo": "Progetto 3",
+        "descrizione": "<p>Descrizione del progetto 3.</p>",
+        "immagine": "./img/immaginepag.principale.jpg",
+        "sottotitolo": "Descrizione",
+        "teamwork": {
+            "titolo": "Cosa abbiamo fatto",
+            "contenuto": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque tempore rem sapiente at placeat delectus ipsum nesciunt, aspernatur molestias ducimus aliquam iste enim beatae id repellendus quia, sint perspiciatis assumenda.</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam aspernatur eum perferendis, tempore obcaecati itaque cupiditate asperiores necessitatibus nisi a ad doloribus explicabo laudantium porro quisquam exercitationem adipisci labore similique.</p>",
+            "descrizione": "<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione pariatur sunt, inventore deleniti saepe voluptate adipisci cum recusandae excepturi assumenda hic incidunt. Fugit facilis debitis ipsum veritatis eius quia et.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi atque aliquid repellat adipisci quo nobis, laboriosam quisquam natus ea ratione omnis assumenda distinctio necessitatibus similique officiis dolorem nisi animi at!</p>"
+        }
+    }
+]

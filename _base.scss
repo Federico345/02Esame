@@ -120,3 +120,24 @@ h1 {
   border: 2px solid red;
   background-color: #ffe6e6;
 }
+
+.button-container {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+.btn-back {
+  background-color: #007bff; 
+  color: #fff; 
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-back:hover {
+  background-color: #0056b3; 
+}

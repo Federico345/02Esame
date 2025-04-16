@@ -5,7 +5,7 @@
 
 .paginaprogetti h3 {
     color: white;
-    background-color: rgba(0, 123, 255, 0); 
+    background-color: rgba(0, 123, 255, 0);
     padding: 10px;
     font-size: 1.5rem;
     text-align: center;
@@ -17,7 +17,16 @@
     width: auto;
 }
 
+.paginaprogetti h2 a {
+    color: $color-light; 
+    text-decoration: none; 
+    transition: color 0.3s ease; 
+}
 
+.paginaprogetti h2 a:hover {
+    color: #0056b3; 
+    text-decoration: underline;
+}
 
 .PROGETTI {
     color: #f4f4f4;
@@ -36,7 +45,7 @@
 }
 
 .paginaprogetti .progetto1 {
-    flex: 1 1 45%; 
+    flex: 1 1 45%;
     box-sizing: border-box;
     text-align: center;
     display: flex;
@@ -45,14 +54,14 @@
 }
 
 .paginaprogetti .progetto2 {
-    flex: 1 1 45%; 
+    flex: 1 1 45%;
     box-sizing: border-box;
     text-align: center;
 }
 
 .paginaprogetti .progetto3,
 .paginaprogetti .progetto4 {
-    flex: 1 1 45%; 
+    flex: 1 1 45%;
     box-sizing: border-box;
     text-align: center;
 }
@@ -61,8 +70,8 @@
 .paginaprogetti .progetto2,
 .paginaprogetti .progetto3,
 .paginaprogetti .progetto4 {
-    position: relative; 
-    width: 48%; 
+    position: relative;
+    width: 48%;
 }
 
 
@@ -75,4 +84,28 @@ img {
 
 .progetto1 form {
     margin-top: 15px;
+}
+
+.teamwork {
+    background: linear-gradient(135deg, #f0f8ff, #dbe9f4); 
+    border: 2px solid #000000; 
+    border-radius: 10px; 
+    padding: 20px; 
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #333; 
+    font-family: Arial, sans-serif; 
+    text-align: justify; 
+}
+
+.teamwork h3 {
+    font-size: 1.8rem; 
+    color: #594efc; 
+    margin-bottom: 15px; 
+}
+
+.teamwork p {
+    font-size: 1rem; 
+    line-height: 1.6;
+    margin-bottom: 10px; 
 }

@@ -117,6 +117,27 @@ h1 {
   background-color: #ffe6e6;
 }
 
+.button-container {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+.btn-back {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-back:hover {
+  background-color: #0056b3;
+}
+
 #header {
   background-color: #333;
   color: #fff;
@@ -430,6 +451,17 @@ textarea {
   width: auto;
 }
 
+.paginaprogetti h2 a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.paginaprogetti h2 a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
 .PROGETTI {
   color: #f4f4f4;
 }
@@ -484,6 +516,30 @@ img {
 
 .progetto1 form {
   margin-top: 15px;
+}
+
+.teamwork {
+  background: linear-gradient(135deg, #f0f8ff, #dbe9f4);
+  border: 2px solid #000000;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #333;
+  font-family: Arial, sans-serif;
+  text-align: justify;
+}
+
+.teamwork h3 {
+  font-size: 1.8rem;
+  color: #594efc;
+  margin-bottom: 15px;
+}
+
+.teamwork p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 10px;
 }
 
 .sezione1, .sezione2 {
