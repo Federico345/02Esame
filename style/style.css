@@ -648,3 +648,17 @@ textarea {
   background-color: #003f7f;
   transform: scale(0.95);
 }/*# sourceMappingURL=Style.css.map */
+
+
+.input-error {
+  border: 1px solid red;
+}
+.error {
+  color: red;
+}
+.success-message {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #e1fbe1;
+  border: 1px solid #5cb85c;
+}

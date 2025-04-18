@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prgetto1</title>
-    <link href="style.css" type="text/css" rel="stylesheet">
+    <link href="style/style.css" type="text/css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -36,7 +36,7 @@
         </p>
     </div>
     <form>
-       <input type="button" value="torna alla pagina precedente" onclick="location.href='Index.php'">
+       <input type="button" value="torna alla pagina precedente" onclick="location.href='index.php'">
     </form>
     <?php
     include "components/footer.php";

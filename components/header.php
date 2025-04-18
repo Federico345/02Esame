@@ -5,7 +5,7 @@
     </label>
     <ul id="menu">
         <li>
-            <a class="vociMenu" href="./Index.php" title="pagina principale">Home</a>
+            <a class="vociMenu" href="./index.php" title="pagina principale">Home</a>
         </li>
         <li>
             <a class="vociMenu" href="#" title="Servizi">Servizi</a>

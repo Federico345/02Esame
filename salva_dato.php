@@ -13,9 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 
 ?>
-
 <?php
-
 if (isset($_GET['success']) && $_GET['success'] == 1) {
     echo "<p style='color: green; text-align: center; font-size: 20px;'>I dati sono stati salvati correttamente!</p>";
 } else {

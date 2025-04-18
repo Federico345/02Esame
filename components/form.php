@@ -1,42 +1,31 @@
 <?php
-// Assicurati che le variabili siano definite
-$nome = $nome ?? '';
-$cognome = $cognome ?? '';
-$email = $email ?? '';
-$errors = $errors ?? [];
-?>
+// components/form.php
+$errors = [];
+$success = false;
+$nome = $cognome = $email = $commento = "";
 
-<form action="/salva_dato.php" method="post" id="form" novalidate>
-    <label for="Nome">Nome:</label>
-    <input type="text" name="nome" id="Nome" placeholder="Nome"
-    value="<?= htmlspecialchars($nome) ?>"
-    class="<?= isset($errors['nome']) ? 'input-errore' : '' ?>">
-    <br>
-    <?php if (isset($errors['nome'])): ?>
-        <span class="errore"><?= $errors['nome'] ?></span><br>
-    <?php endif; ?>
-    <br>
-    <div><label for="Cognome">Cognome:</label></div>
-    <input type="text" name="cognome" id="Cognome" placeholder="Cognome" 
-    value="<?= htmlspecialchars($cognome) ?>"
-    class="<?= isset($errors['cognome']) ? 'input-errore' : '' ?>">
-    <br>
-    <?php if (isset($errors['cognome'])): ?>
-        <span class="errore"><?= $errors['cognome'] ?></span><br>
-    <?php endif; ?>
-    <br>>
-    <div><label for="email">email:</label></div>
-    <input type="email" id="email" name="email" required="required" placeholder="email"
-    value="<?= htmlspecialchars($email) ?>"
-    class="<?= isset($errors['email']) ? 'input-errore' : '' ?>">
-    <br>
-    <?php if (isset($errors['email'])): ?>
-        <span class="errore"><?= $errors['email'] ?></span><br>
-    <?php endif; ?>
-    <br>>
-    <div><label for="commento">Scrivi una breve descrizione per farci capire come poterti aiutarti nel miglior modo</label></div>
-    <textarea placeholder="commento..." name="commento" rows="15" cols="70" id="commento"></textarea>
-    <div><button type="submit" value="submit">Vai!!</button></div>
-</form>
+// Mostra messaggio di successo se presente nel GET
+if (isset($_GET['success']) && $_GET['success'] == 1) {
+    $success = true;
+}
 
+// Gestione del form
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
+    $nome = htmlspecialchars(trim($_POST["nome"] ?? ''));
+    $cognome = htmlspecialchars(trim($_POST["cognome"] ?? ''));
+    $email = htmlspecialchars(trim($_POST["email"] ?? ''));
+    $commento = htmlspecialchars(trim($_POST["commento"] ?? ''));
 
+    if (empty($nome)) $errors['nome'] = 'Il nome è obbligatorio.';
+    if (empty($cognome)) $errors['cognome'] = 'Il cognome è obbligatorio.';
+    if (empty($email) || !filter_var(value: $email, filter: FILTER_VALIDATE_EMAIL)) $errors['email'] = 'Email non valida.';
+    if (empty($commento)) $errors['commento'] = 'Il commento è obbligatorio.';
+
+    if (empty($errors)) {
+        // Se tutto è ok: salvataggio + redirect
+        $riga = "Nome: $nome | Cognome: $cognome | Email: $email | Commento: $commento" . PHP_EOL;
+        file_put_contents("dati_salvati.txt", $riga, FILE_APPEND);
+        header("Location: " . $_SERVER['PHP_SELF'] . "?success=1#form");
+        exit;
+    }
+}

@@ -22,7 +22,7 @@ $progetto = array_values($progetto)[0];
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= $progetto['titolo'] ?></title>
-    <link href="style.css" type="text/css" rel="stylesheet">
+    <link href="style/style.css" type="text/css" rel="stylesheet">
 </head>
 <body>
     <header>
