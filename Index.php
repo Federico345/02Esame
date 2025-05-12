@@ -3,6 +3,7 @@ $errors = [];
 $nome = $cognome = $email = $commento = "";
 
 
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nome = htmlspecialchars(trim($_POST["nome"]));
     $cognome = htmlspecialchars(trim($_POST["cognome"]));

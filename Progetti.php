@@ -41,5 +41,4 @@ $portfolio = json_decode(file_get_contents('portfolio.json'), true);
         <?php include "components/footer.php"; ?>
     </footer>
 </body>
-
 </html>
