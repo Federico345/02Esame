@@ -45,7 +45,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fede Stef</title>
-    <link href="Style.css" type="text/css" rel="stylesheet">
+    <link href="style.css" type="text/css" rel="stylesheet">
     <style>
         .error { color: red; }
         .input-error { border: 1px solid red; }
@@ -74,7 +74,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
              <h2 id="titolocontatti">Contatti ed informazioni</h2>
              <div id="numeromail">
              <h3>di seguito i vari contatti e i nostri social per restare sempre aggiornati su novità nel settore.</h3>
-            <a href="mailto:example@gmail.com">qui trovi la mail</a><br><br>
+            <a href="mailto:example@gmail.com">qui trovi la mail</a> <br>
             <a href="tel:3333333333">il nostro numero di telefono: 3333333333</a>
             <p>la nostra sede:</p>
             <address>Via pincopallo 2/A</address>
@@ -89,7 +89,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <h3>Richiedi informazioni</h3>
             <div class="commenti">
                 <h3>Lascia qualche tuo dettaglio per fare delle domande e per prendere un appuntamento</h3>
-                <form action="" method="post" novalidate>
+                <form action="<?= htmlspecialchars($_SERVER['PHP_SELF']) ?>" method="post" novalidate>
                     <label for="Nome">Nome:</label>
                     <input type="text" name="nome" id="Nome" placeholder="Nome"
                            value="<?= htmlspecialchars($nome) ?>"
@@ -97,7 +97,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <?php if (isset($errors['nome'])): ?>
                         <span class="error"><?= $errors['nome'] ?></span>
                     <?php endif; ?>
-                    <br><br>
+                    
 
                     <label for="Cognome">Cognome:</label>
                     <input type="text" name="cognome" id="Cognome" placeholder="Cognome"
@@ -106,7 +106,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <?php if (isset($errors['cognome'])): ?>
                         <span class="error"><?= $errors['cognome'] ?></span>
                     <?php endif; ?>
-                    <br><br>
+                    
 
                     <label for="email">Email:</label>
                     <input type="email" name="email" id="email" placeholder="Email"
@@ -115,16 +115,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <?php if (isset($errors['email'])): ?>
                         <span class="error"><?= $errors['email'] ?></span>
                     <?php endif; ?>
-                    <br><br>
+                    
 
                     <label for="commento">Commento:</label>
                     <textarea name="commento" id="commento" placeholder="Scrivi un commento..."
                               rows="5" cols="30"
                               class="<?= isset($errors['commento']) ? 'input-error' : ''; ?>"><?= htmlspecialchars($commento) ?></textarea>
                     <?php if (isset($errors['commento'])): ?>
-                        <span class="error"><?= $errors['commento'] ?></span>
+                        <span class="error"><?= $errors['commento'] ?></spn>
                     <?php endif; ?>
-                    <br><br>
+                    
 
                     <button type="submit">Invia</button>
                 </form>

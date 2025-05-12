@@ -25,9 +25,9 @@ $portfolio = json_decode(file_get_contents('portfolio.json'), true);
             <?php foreach ($portfolio as $progetto): ?>
                 <div class="progetto">
                     <h2>
-                    <a href="dettaglio.php?id=<?= $progetto['id'] ?>">
-                        <?= $progetto['titolo'] ?>
-                    </a>
+                        <a href="dettaglio.php? id=<?= $progetto['id'] ?>">
+                            <?= $progetto['titolo'] ?>
+                        </a>
                     </h2>
                     <img src="<?= $progetto['immagine'] ?>" alt="<?= $progetto['titolo'] ?>" width="600">
                     <form>

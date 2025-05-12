@@ -48,7 +48,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contatti</title>
-    <link href="Style.css" type="text/css" rel="stylesheet">
+    <link href="style.css" type="text/css" rel="stylesheet">
     <style>
         .error { color: red; }
         .input-error { border: 1px solid red; }
@@ -60,11 +60,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         include "components/header.php";
     ?>
     </header>
-    <h1>Contatti</h1>
+    <h1>Contatti </h1>
     <main>
         <section class="contatti-container">
             <p>Di seguito i vari contatti e i nostri social per restare sempre aggiornati su novità nel settore.</p>
-            <a href="mailto:example@gamil.com">qui trovi la mail</a><br><br>
+            <a href="mailto:example@gamil.com">qui trovi la mail</a><br>
             <a href="tel:3333333333">il nostro numero di telefono: 3333333333</a>
             <p>La nostra sede:</p>
             <address>Via pincopallo 2/A</address>
@@ -76,7 +76,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <h2 id="info">Info</h2>
             <h3>Richiedi informazioni</h3>
             <p>Lascia qualche tuo dettaglio per fare delle domande e per prendere un appuntamento</p>
-            <form action="" method="post" novalidate>
+            <form action="<?= htmlspecialchars($_SERVER['PHP_SELF']) ?>" method="post" novalidate>
                     <label for="Nome">Nome:</label>
                     <input type="text" name="nome" id="Nome" placeholder="Nome"
                            value="<?= htmlspecialchars($nome) ?>"

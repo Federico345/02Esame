@@ -23,10 +23,9 @@
         </p>
     </div>
     <form id="torna">
-        <input type="button" value="guarda altri progetti" onclick="location.href='Progetti.php'">
+        <input type="button" value="guarda altri progetti" onclick="location.href='progetti.php'">
     </form>
     <img src="./img/teamwork.jpg" width="400" alt="teamwork">
-    </div>
     <div class="teamwork">
         <h3>teamwork</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quos natus dolorem maiores maxime ad iure explicabo ipsum suscipit corrupti qui dolores amet reprehenderit necessitatibus, quas accusantium non nesciunt quidem.
@@ -36,7 +35,7 @@
         </p>
     </div>
     <form>
-       <input type="button" value="torna alla pagina precedente" onclick="location.href='Index.php'">
+       <input type="button" value="torna alla pagina precedente" onclick="location.href='index.php'">
     </form>
     <?php
     include "components/footer.php";

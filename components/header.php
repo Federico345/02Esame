@@ -5,17 +5,17 @@
     </label>
     <ul id="menu">
         <li>
-            <a class="vociMenu" href="./Index.php" title="pagina principale">Home</a>
+            <a class="vociMenu" href="./index.php" title="pagina principale">Home</a>
         </li>
         <li>
-            <a class="vociMenu" href="#" title="Servizi">Servizi</a>
+            <a class="vociMenu" href="#" title="servizi">Servizi</a>
         </li>
         <li>
-            <a class="vociMenu" href="./Progetti.php" title="Progetti">Progetti</a>
+            <a class="vociMenu" href="./progetti.php" title="Progetti">Progetti</a>
         </li>
         <li><a class="vociMenu" href="#" title="Visione">Visione</a></li>
         <li>
-            <a class="vociMenu" href="./Contatti.php" title="Contatti">Contatti</a>
+            <a class="vociMenu" href="./contatti.php" title="Contatti">Contatti</a>
         </li>
     </ul>
 </nav>
